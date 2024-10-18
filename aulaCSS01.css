@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(223, 173, 216);
+}
+
+h1 {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 104px;
+}
+
+h2 {
+    font-size: 48px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+
+}
+
+h3 {
+    text-transform: capitalize;
+    text-align: center;
+    background-color: blueviolet;
+    text-decoration: underline;
+
+}
+
+p {
+    text-indent: 58px;
+    font-size: 28px;
+    text-align: left;
+    font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+    font-variant: normal;
+}
