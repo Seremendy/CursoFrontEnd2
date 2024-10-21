@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.cabecalho-principal{
+    background-image: url(imagens/bg-3.jpg);
+    height: 500px;
+    background-size: cover;
+
+}
+
+.cabecalho-banner{
+    margin: 50px auto 0 auto;
+    width: 80%;
+    text-align: center;
+    color: white;
+}
+
+.cabecalho-banner h1{
+    font-size: 56px;
+    text-shadow: 2px 2px 2px rgb(2, 2, 2);
+    text-transform: uppercase;
+}
+
+.cabecalho-banner p{
+    background-color: rgba(0,0,0, 0.7);
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
