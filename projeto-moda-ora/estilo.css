@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    width: 100%;  
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.header__nav {
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    background-color: #162028;
+    padding: 0.5rem;
+}
+
+.header__tittle {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header__links {
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+    color: #425564;
+    padding: 0;
+    margin: 0;
+}
+
+.header__links li{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.header__links a {
+    text-decoration: none;
+    color: #425564;
+    text-transform: uppercase; 
+    letter-spacing: 5px; 
+}
+
+.header__imagem img{
+    max-width: 100%;
+}
+
+.main__section {
+    display: flex;
+    flex-direction: column;
+    color: #555;
+}
+
+.main__a-escolha {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15rem;
+}
+
+.main__a-escolha h2 {
+    font-size: 1.5rem;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.main__a-escolha p {
+    line-height: 2rem;
+    margin-top: 2rem;
+}
+
+.list__imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style-type: none;
+    gap: 4rem;
+}
+
+.foto__modelo {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.list__imagem__lista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__imagem__lista p {
+    margin: 0;
+}
+
+.main__detalhes {
+    background-image: url(imagem/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 8rem;
+    margin-top: 3.5rem;
+}
+
+.main__detalhes h2 {
+    font-size: 4rem;
+}
+
+.main__detalhes p {
+    margin-right: 30rem;
+    line-height: 2rem;
+}
+
+.rodape {
+    justify-items: center;
+    background-color: #0b171f;
+    color: #6f8597;
+}
+
+.rodape p {
+    margin: 0;
+    padding: 2rem;
+    letter-spacing: 3px;
+}
