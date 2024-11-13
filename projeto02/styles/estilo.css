@@ -1,0 +1,58 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/projeto02/imagens/bg-2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    text-shadow: 0 4px 5px black;
+    letter-spacing: 2px;
+    margin-top: 200px;
+}
+
+.header p{
+    background-color: rgb(0,0,0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: auto; 
+}
+
+.section {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    width: 80%;
+    max-width: 920px;
+    gap: 10px;
+    padding: 18px;
+    
+}
+
+.section__conteudo img {
+    display: block;
+}
+
+.section__conteudo p {
+    background-color: rgb(0,0,0, 0.8);
+    padding: 8px;
+    margin: 0;
+}
