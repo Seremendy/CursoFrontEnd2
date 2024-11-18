@@ -64,9 +64,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
     gap: 1rem;
 
+}
+
+.conteudo__cursos__articles article {
+    flex: 0 1 0;
 }
 
 .conteudo__cursos__articles div {

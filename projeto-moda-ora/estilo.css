@@ -47,7 +47,7 @@ body {
 }
 
 .header__imagem img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .main__section {
