@@ -3,9 +3,10 @@ body {
     margin: 0;
 }
 
-.header {
+#header {
     background-color: grey;
-    position:fixed;
+    position:sticky;
+    top: 0;
     width: 100%;
 }
 
@@ -30,15 +31,13 @@ body {
 }
 
 .header__list a:hover {
-    background-color: yellow;
+    background-image: yellow;
     color: black;
     font-weight: bold;
 }
-.main {
-    padding-top: 5rem;
-}
+
 .main__conteudo-principal {
-    background-color: yellow;
+    background-image: linear-gradient(white,yellow);
     display: flex;
     padding: 0 5rem;
 }
@@ -104,7 +103,7 @@ body {
 
 #conteudo__nossa-escola {
     display: flex;
-    background-color: #1212a3;
+    background-color: #14148a;
     justify-content: center;
     color: white;
 }

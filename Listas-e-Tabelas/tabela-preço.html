@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Preço</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            background-color: beige;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: rgb(189, 189, 158);
+            border: 2px solid rgb(110, 110, 87);
+            padding: 16px;
+        }
+
+        td {
+            border: 2px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela de preços de cursos</caption>
+        <thead> <!--Colunas do cabeçalho tag ideial " th "-->
+            <tr>
+                <th>Àrea</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Desing</td>
+                <td>Indesing</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Desing</td> -->
+                <td>Photoshop</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Desing</td> -->
+                <td>Illustrator</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <td rowspan="4">Development</td>
+                <td>HTML</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Development</td> -->
+                <td>CSS</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Development</td> -->
+                <td>Javascript</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+
+            <tr>
+                <!-- <td>Development</td> -->
+                <td>PHP</td>
+                <td>R$ 1.000,00</td>
+            </tr>
+        </tbody>
+
+        <tfoot><!-- pode ser td ou th -->
+            <tr>
+                <td colspan="3">Valores sujeitos a alteração sem previo aviso</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr> <!--"tr"Linha da tabela-->
+            <td>Item 1</td>  <td>Item 2</td><!--"td"Coluna da tabela-->
+        </tr>
+
+        <!--Nas tabelas originais todas as colunas de todas as linhas devem estar na mesma quantidade-->
+
+        <tr> <!--Linha da tabela-->
+            <td>Item 3</td> <td>Item 4</td><!--Coluna da tabela-->
+        </tr>
+    </table>
+    <br><br><br><hr>
+
+
+    <table>
+        <tr> 
+            <td colspan="2">Item 1</td><!--Coluna da tabela "colspan" ela aumenta o valor da linha para a direita--> <!--Por isso essa linha pode ficar sem 1 coluna-->
+        </tr>
+  
+        <tr> 
+            <td>Item 3</td> <td>Item 4</td>
+        </tr>
+
+        <tr>
+            <td>Item 3</td> <td>Item 4</td>
+        </tr>
+    </table>
+    <br><br><br><hr>
+
+
+    <table>
+        <tr> 
+            <td rowspan="2">Item 1</td> <!--Coluna da tabela "crowspan" ela aumenta o valor da linha para baixo-->
+            <td>Item 2</td>
+        </tr>
+  
+        <tr> 
+            <td>Item 4</td> <!--Por isso essa linha pode ficar sem 1 coluna-->
+        </tr>
+
+        <tr>
+            <td>Item 5</td> <td>Item 6</td>
+        </tr>
+    </table>
+    <br><br><br><hr>
+
+
+    <table>
+        <tr> <!--"tr"Linha da tabela-->
+            <td>Item 1</td>  <td>Item 2</td><!--"td"Coluna da tabela-->
+        </tr>
+
+        <!--Nas tabelas originais todas as colunas de todas as linhas devem estar na mesma quantidade-->
+
+        <tr> <!--Linha da tabela-->
+            <td>Item 3</td> <td>Item 4</td><!--Coluna da tabela-->
+        </tr>
+    </table>
+    <br><br><br><hr>
+
+    <h1>SEMANTICO</h1>
+
+    <table>
+        <tr> <!--"tr"Linha da tabela-->
+            <th>Item 1</th>  <th>Item 2</th><!--"th" Cabeçalho tabela-->
+        </tr>
+
+        <!--Nas tabelas originais todas as colunas de todas as linhas devem estar na mesma quantidade-->
+
+        <tr> <!--Linha da tabela-->
+            <td>Item 3</td> <td>Item 4</td><!--Coluna da tabela-->
+        </tr>
+    </table>
+    <br><br><br><hr>
+
+    <h1>Tabela semantica exemplo</h1>
+    <table>
+        <caption>TITULO DA TABELA</caption>
+        <thead>
+            <tr> <!--"tr"Linha da tabela-->
+                <th>Item 1</th>  <th>Item 2</th><!--"th" Cabeçalho tabela-->
+            </tr>
+        </thead>
+        <!--Nas tabelas originais todas as colunas de todas as linhas devem estar na mesma quantidade-->
+
+
+        <tbody><!--BODY DA TABELA-->
+            <tr> <!--Linha da tabela-->
+                <td>Item 3</td> <td>Item 4</td><!--Coluna da tabela-->
+            </tr>
+        </tbody>
+
+
+        <tfoot><!--RODAPE DA TABELA-->
+            <tr>
+                <th>Rodapé</th> <!--PODE SER th ou td-->
+                <td>Rodapé</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br><br><hr>
+</body>
+</html>
