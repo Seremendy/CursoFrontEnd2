@@ -1,0 +1,81 @@
+html {
+    font-size: 65.2%;
+    width: 35rem;
+    margin: 0 auto;
+    background-color: #95a5a6;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    /* min-height: 100vh; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    width: 37rem;
+    font-size: 1.8rem;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 2rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    margin-bottom: .25rem;
+}
+
+input{
+    padding: .75rem;
+    margin-bottom: .75rem;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    font-size: 1.8rem;
+}
+
+input,
+label{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+legend {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #454e4f;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    width: fit-content;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.action{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn2 {
+    background-color: rgb(47, 47, 231);
+    color: white;
+    cursor: pointer;
+}
+
+.btn--apagar{
+    background-color: rgb(128, 50, 50);
+}
