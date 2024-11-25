@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popover</title>
+
+    <style>
+        :popover-open{
+            width: 300px;
+            padding: 0 10px;
+            border-radius: 12px;
+        }
+
+        ::backdrop{
+            background-color: rgba(0, 0, 0, 0.32); /* pinta a cor de fundo do popover */
+        }
+
+        .popover-container :popover-open{
+            inset: unset; /* limpa a formatação do popover */
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Curso web desing - popover</h1>
+    <!-- tomar cuidado porque os popover eles abrem e se sobrepoe -->
+    <button popovertarget="my-popover">Toggle popover</button>
+    <div id="my-popover" popover>Este texto é aberto ao clicar no botão</div>
+    <hr>
+    <button popovertarget="my-popover2">popover auto (default)</button>
+    <div id="my-popover2" popover="auto">Este texto é aberto ao clicar no botão</div>
+    <!-- o valor padrão é auto, os dois acima são iguais, clicou fora da tela ele fecha -->
+    <hr>
+    <button popovertarget="my-popover3">popover manual</button>
+    <div id="my-popover3" popover="manual">Este texto é aberto ao clicar no botão</div>
+    <!-- o popover manual tem que clicar no botão de volta ou criar um botão para fechar -->
+    <hr>
+    <button popovertarget="my-popover4" popovertargetaction="show">popover show mostra</button>
+    <button popovertarget="my-popover4" popovertargetaction="hide">popover hide esconde</button>
+    <div id="my-popover4" popover="manual">Este texto é aberto ao clicar no botão</div>
+    <!-- exemplo do botão de fechar -->
+    <hr>
+    <div class="popover-container">
+        <button popovertarget="my-popover5">Toggle popover</button>
+        <div popover id="my-popover5">Texto de ajuda do popover</div>
+    </div>
+</body>
+</html>

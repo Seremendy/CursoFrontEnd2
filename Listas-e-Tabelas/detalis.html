@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        details {
+            color: red;
+            background-color: #ccc;
+            margin-bottom: 1em;
+            padding: .5em;
+        }
+
+        details summary {
+            cursor: pointer;
+        }
+
+        details[open] {
+            background-color: blue;
+            color: white;
+        }
+        /* para selecionar o atributo coloca a tag e [] como acima */
+    </style>
+</head>
+<body>
+    
+    <h1>Curso web design</h1>
+   <details>  <!-- mostra um texto, e quando o usuario clicar o texto do summary é visualizado -->
+        <summary>Pré-requisitos</summary>
+        <p>Para fazer esse curso é necessário conhecimento de sistema operacional</p>
+    </details>
+
+    <details open>  <!-- se tiver esse atributo " open " ele vai exibir aberto -->
+        <summary>Carga horária</summary>
+        <p>180 horas</p>
+    </details>
+</body>
+</html>

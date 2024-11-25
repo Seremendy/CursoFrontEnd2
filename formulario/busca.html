@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de busca</title>
+</head>
+<body>
+    <h1>Formulário de busca</h1>
+    <!--
+    method="get" ele será enviado pela url (poucos dados fica visivel na url)
+    method="post" ele serão escondidos (quando tem questao de segurança tipo login e senha) 
+
+    ( name="q" ) é exclusivo para busca do google
+    -->
+    <form action="https://google.com/search"  method="get">
+        <label for="busca">Faça uma busca</label>
+        <input type="text" name="q" id="busca">
+        <input type="submit" value="OK">
+    </form>
+</body>
+</html>
