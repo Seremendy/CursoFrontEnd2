@@ -4,16 +4,114 @@
     <meta charset="UTF-8">
 
     <title>Formulario</title>
+
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
 </head>
 <body>
     <form action="">
         <fieldset>
             <legend>Introdução</legend>
 
+            <label for="">Email</label>
             <input type="email" name="email" required>
+            <br><br>
 
+
+            <label for="filhos">Quantidade de filhos</label>
+            <input type="number" id="filhos" min="0" max="50">
+            <br><br>
+
+            Possui atividade extra? <label for="">
+            <label><input type="radio" name="atvExtra" value="s">Sim</label>
+            <label><input type="radio" name="atvExtra" value="n">Não</label>
+            <br><br>
+            <!-- se vc envolver com " label " o input o sim/não vai ficar clicavel para marcar o radio -->
+            <!-- se vc quer que o usuario selecione um unico tipo tem que por " name " na tag -->
+
+            <input type="date" min="2022-01-15"  max="2022-01-30">
             <input type="submit" value="mandar">
         </fieldset>
+
+        <br><br><br>
+
+        <fieldset>
+            <legend>Área de interesse</legend>
+
+            <label><input type="checkbox" name="interesse" value="html">HTML</label>
+            <label><input type="checkbox" name="interesse" value="css">CSS</label>
+            <label><input type="checkbox" name="interesse" value="javascript">Javascript</label>
+            <label><input type="checkbox" name="interesse" value="python">Python</label>
+            <label><input type="checkbox" name="interesse" value="java">Java</label>
+
+            <br><br>
+
+            <label>
+                <option value="">Selecione uma</option>
+                <select name="linguagem" required multiple size="3">
+                    <optgroup label="frontend">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">Javascript</option>
+                    </optgroup>
+
+                    <optgroup label="backend">
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </optgroup>
+                </select>
+                <!-- required faz com que seja obrigatorio preencher -->
+                <!-- multiple faz com que possa selecionar com crtl mais de 1 -->
+                <!-- size é o tanto de linhas que vai ser exibido -->
+
+                <input type="text" list="linguagemList"> 
+                <datalist id="linguagemList">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="Javascript">
+                    <option value="Java">
+                    <option value="PHP">
+                    <option value="Python">
+                </datalist>
+                <!-- datalist com options abertas, da pra procurar o nome na lista lembrando de colocar "list" no input-->
+            </label>
+        </fieldset>
+        <br><br><br>
+        <!-- sempre coloca " name " e " value " sao dados obrigatorios para ser recebido pelo servidor -->
+
+        <fieldset>
+            <legend>mensagem</legend>
+            <textarea name="msg" cols="30" rows="10" maxlength="10"></textarea>
+            <br><br>
+            <textarea cols="50" rows="8" readonly>
+
+            </textarea>
+            <input type="checkbox">Li e aceito o contrato
+        </fieldset>
+        <!--" maxlenght " limita o tanto de caracteres escrito -->
+        <!-- " readonly " apenas leitura o texto -->
+        <!-- " disabled " tem uma formatação diferente e não da pra clicar desabilita a area -->
+        <input type="submit" value="mandar">
+        <input type="button" value="button">
+
+        <button type="submit">Mandar com tag button</button>
+        <button type="button"><b>botão</b></button>
+        <br><br>
+
+        <input type="search">
+        <br>
+        <input type="range" min="0" max="10" step="2">
+        <!-- step pula dependendo do numero que vc colocar -->
+        <br><br>
+        <input type="time">
+        <br><br>
+        <input type="color">
+
+        <!-- checked de atributo faz com que a checkbox seja marcada quando usuario entrar na pagina -->
+        <!-- placeholder fica escrito dentro do marcador um exemplo de escrita -->
     </form>
 </body>
 </html>
