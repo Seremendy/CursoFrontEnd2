@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap');
+:root {
+    --main-color: #5353ff;
+}
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--main-color);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.formulario_de_login, .formulario_de_cadastro {
+    width: 90%;
+    min-width: 28.125em;
+    max-width: 35em;
+    background-color: white;
+    padding: 2em;
+    box-shadow:-0.5em 0 0 #3b3bac;
+}
+
+.formulario_de_login-box {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label,  input {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    border: none;
+}
+
+input:focus {
+    border: 2px solid var(--main-color);
+}
+
+.box_info {
+    color: grey;
+}
+
+#password, #email, #user {
+    border-bottom:2px solid var(--main-color);
+    padding: .5em;
+    margin-bottom: 1.7em;
+    outline: 0;
+}
+
+.box_tituloPrincipal {
+    font-size: 1.8em;
+    color: var(--main-color);
+    padding-bottom: .5em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_buttonLogin {
+    background-color: var(--main-color);
+    border: none;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.container_cadastro {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-weight: bold;
+    padding: 1em;
+}
+
