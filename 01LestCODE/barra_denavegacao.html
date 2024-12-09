@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""></a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Tabelas no HTML</h1>
+
+        <section id="students">
+            <h2>Tabelas de Alunos</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Carol Danvers</td>
+                        <td>carol.danvers@gmail.com</td>
+                        <td>1</td>
+                    </tr>
+
+                    <tr>
+                        <td>Peter Parker</td>
+                        <td>peter.parker@gmail.com</td>
+                        <td>2</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tony Stark</td>
+                        <td>tony.stark@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="finance"> 
+            <h2>Tabela de controle financeiro</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td rowspan="2">15/06/2022</td>
+                        <td colspan="2">Despesa</td>
+                        <!-- <td>Almoço</td> -->
+                        <td>R$ 35,00</td>
+                    </tr>
+
+                    <tr>
+                        <!-- <td>15/06/2022</td> -->
+                        <td>Receita</td>
+                        <td>Salário</td>
+                        <td>R$ 3.768,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formulário</h2>
+            <hr>
+            <br>
+            <form action="" method="get">
+                <div>
+                    <label for="texto">Nome:</label>
+                    <input type="text" name="nome" id="texto" placeholder="Informe seu nome...">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="password">Senha:</label>
+                    <input type="password" name="senha" id="password" placeholder="Digite sua senha...">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="number">Numero:</label>
+                    <input type="number" name="numero" id="number">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="data">Data de nascimento:</label>
+                    <input type="date" name="data" id="data">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="hora">Horário:</label>
+                    <input type="time" name="hora" id="hora">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="arquivo">Arquivo:</label>
+                    <input type="file" name="arquivo" id="arquivo">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="color" name="cor" id="cor">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="distancia">Distancia</label>
+                    <input type="range" name="distancia" id="distancia" value="100" max="200">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="selecao">Selecione</label>
+                    <input type="checkbox" name="selecao" id="selecao" checked>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="opcao">Opção</label>
+                    <input type="radio" name="opcao" id="opcao">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="resetar">Input</label>
+                    <input type="reset" name="resetar" id="resetar" value="Limpar">
+                </div>
+
+                <br>
+
+                <div>
+                    <!-- <label for="hora">Horário</label> -->
+                    <input type="submit" name="enviar" id="enviar" value="Enviar">
+                </div>
+
+                <br>
+
+                <textarea name="bio" id="bio" cols="30" rows="10" value="enviar"></textarea>
+
+                <br>
+
+                <div>
+                    <select name="select" id="select">
+                        <option value="" disabled selected>Seleciona uma das opções</option>
+                        <option value="receita">Receita</option>
+                        <option value="despesa">Despesa</option>
+                        <option value="transferencia">Transferência</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
