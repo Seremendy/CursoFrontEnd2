@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --global-primary-color: #ff5678;
+    --global-second-color: #35e6e9;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    /* min-width: 1152px;
+    min-height: 700px; */
+    margin: auto;
+}
+
+.body_centralizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_apresentacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_apresentacao h1 {
+    font-size: 6rem;
+    margin: 2.5rem auto;
+}
+
+.color_destaque {
+   color: var(--global-primary-color);
+}
+
+.main_informacoes {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    width: 60rem;
+    height: 52rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.main_informacoes a {
+    text-decoration: none;
+}
+
+.main_informacoes h2 {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+.color_botao_cadastrar {
+    font-size: 2.5rem;
+    border-radius: 12px;
+    background-color: var(--global-second-color);
+    color: white;
+    border: 2px solid #c0ebf4;
+    padding: 1rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.color_botao_entidades {
+    margin: 3rem 0;
+    font-size: 2.5rem;
+    background-color: var(--global-primary-color);
+    color: white;
+    border: 2px solid #C0EBF4;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.main_cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.main_cadastro a {
+    color: black;
+    margin: 1.5rem 0;
+    text-decoration: underline;
+    font-size: 2.8rem;
+}
+
+
+
+
+
+/* ESTILIZAÇÃO DA PAGINA CADASTRO */
+
+.formatacao_campo_de_cadastro {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.formatacao_campo_de_cadastro label {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.estilizacao_da_caixa {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 1.5rem 8rem;
+
+}
+
+.adicao_da_coleta {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ESTILIZAÇÃO DA PAGINA ENTIDADES */
+.container {
+    font-size: 2.4rem;
+    margin: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding: .5rem;
+}
+.container h3 {
+    display: inline-block;
+}
+
+.container span {
+    color: var(--global-second-color);
+    border: 1px solid var(--global-second-color);
+    border-radius: 5px;
+    padding: .1rem;
+    margin: 0 1.5rem;
+}
+
+/* ESTILIZAÇÃO DA PAGINA CAMPO DE ATUAÇÃO */
+.estilizacao_do_campo_de_atuacao {
+    justify-items: center;
+    margin: 2rem 0;
+}
+
+.estilizacao_do_campo_de_atuacao h3 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.estilizacao_do_campo_de_atuacao a {
+    color: var(--global-primary-color);
+    font-size: 2.7rem;
+}
